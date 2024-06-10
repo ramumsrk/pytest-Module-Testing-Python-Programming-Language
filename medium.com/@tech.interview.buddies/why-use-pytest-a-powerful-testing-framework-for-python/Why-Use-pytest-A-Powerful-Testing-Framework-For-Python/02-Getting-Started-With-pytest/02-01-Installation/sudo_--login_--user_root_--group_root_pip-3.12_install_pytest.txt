@@ -1,0 +1,16 @@
+sudo --login --user root --group root pip-3.12 install pytest
+[sudo] password for ramumsrk: 
+Collecting pytest
+  Downloading pytest-8.2.2-py3-none-any.whl.metadata (7.6 kB)
+Collecting iniconfig (from pytest)
+  Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: packaging in /usr/lib/python3.12/site-packages (from pytest) (23.2)
+Collecting pluggy<2.0,>=1.5 (from pytest)
+  Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+Downloading pytest-8.2.2-py3-none-any.whl (339 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 339.9/339.9 kB 2.0 MB/s eta 0:00:00
+Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Installing collected packages: pluggy, iniconfig, pytest
+Successfully installed iniconfig-2.0.0 pluggy-1.5.0 pytest-8.2.2
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv

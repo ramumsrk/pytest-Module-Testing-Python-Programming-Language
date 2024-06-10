@@ -1,0 +1,27 @@
+sudo --login --user root --group root pip-3.12 install pytest-{cov,mock,xdist}
+[sudo] password for ramumsrk: 
+Collecting pytest-cov
+  Downloading pytest_cov-5.0.0-py3-none-any.whl.metadata (27 kB)
+Collecting pytest-mock
+  Downloading pytest_mock-3.14.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting pytest-xdist
+  Downloading pytest_xdist-3.6.1-py3-none-any.whl.metadata (4.3 kB)
+Requirement already satisfied: pytest>=4.6 in /usr/local/lib/python3.12/site-packages (from pytest-cov) (8.2.2)
+Collecting coverage>=5.2.1 (from coverage[toml]>=5.2.1->pytest-cov)
+  Downloading coverage-7.5.3-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.2 kB)
+Collecting execnet>=2.1 (from pytest-xdist)
+  Downloading execnet-2.1.1-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: iniconfig in /usr/local/lib/python3.12/site-packages (from pytest>=4.6->pytest-cov) (2.0.0)
+Requirement already satisfied: packaging in /usr/lib/python3.12/site-packages (from pytest>=4.6->pytest-cov) (23.2)
+Requirement already satisfied: pluggy<2.0,>=1.5 in /usr/local/lib/python3.12/site-packages (from pytest>=4.6->pytest-cov) (1.5.0)
+Downloading pytest_cov-5.0.0-py3-none-any.whl (21 kB)
+Downloading pytest_mock-3.14.0-py3-none-any.whl (9.9 kB)
+Downloading pytest_xdist-3.6.1-py3-none-any.whl (46 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.1/46.1 kB 637.7 kB/s eta 0:00:00
+Downloading coverage-7.5.3-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (236 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 236.3/236.3 kB 2.7 MB/s eta 0:00:00
+Downloading execnet-2.1.1-py3-none-any.whl (40 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.6/40.6 kB 719.4 kB/s eta 0:00:00
+Installing collected packages: execnet, coverage, pytest-xdist, pytest-mock, pytest-cov
+Successfully installed coverage-7.5.3 execnet-2.1.1 pytest-cov-5.0.0 pytest-mock-3.14.0 pytest-xdist-3.6.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
